@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: midnightblue;
+}
+
+button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.search-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+}
+
+.search-block label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#status {
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
+    min-height: 20px;
+}
+
+.ok {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+.users-section,
+.posts-section {
+    text-align: left;
+}
+
+h2 {
+    border-bottom: 2px solid steelblue;
+    padding-bottom: 4px;
+}
+
+ul#users {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+li.user-card {
+    border: 1px solid #999;
+    padding: 12px 16px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.user-name {
+    margin: 0;
+    font-size: 18px;
+}
+
+.user-email,
+.user-city {
+    margin: 0;
+    font-size: 15px;
+}
+
+.user-email {
+    color: #333;
+}
+
+.user-city {
+    color: #555;
+}
+
+.posts-btn {
+    align-self: flex-start;
+    margin-top: 6px;
+    font-size: 14px;
+    padding: 6px 12px;
+}
+
+li.empty {
+    border: none;
+    padding: 8px 0;
+    color: #a00;
+    font-weight: bold;
+}
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.post {
+    border: 1px solid #999;
+    padding: 12px 16px;
+    border-radius: 4px;
+}
+
+.post-title {
+    margin: 0 0 6px 0;
+    font-size: 17px;
+}
+
+.post-body {
+    margin: 0;
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
